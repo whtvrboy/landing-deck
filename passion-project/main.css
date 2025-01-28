@@ -1,0 +1,15 @@
+body {
+	background-color: PapayaWhip;
+	text-align: center;
+}
+
+p{
+	padding-left: 250px;
+	padding-right: 250px;
+}
+
+ol{
+	padding-left: 610px;
+	padding-right: 610px;
+	text-align: left
+}
