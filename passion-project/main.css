@@ -3,13 +3,17 @@ body {
 	text-align: center;
 }
 
-p{
+p {
 	padding-left: 250px;
 	padding-right: 250px;
+	font: small-caps 15px Verdana;
 }
 
 ol{
 	padding-left: 610px;
 	padding-right: 610px;
-	text-align: left
+	padding-bottom: 10px;
+	text-align: left;
+	font: small-caps 12px Verdana;
 }
+
