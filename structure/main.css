@@ -1,88 +1,126 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
+  margin: 0;
+
+  /* added the lightcyan bg color from the freezer and fridge elements */
+  background: lightcyan;
+
+  /* this will allow for nice vertical centering of the fridge, without needing the padding-top of the freezer element */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
-	max-width: 100%
+  max-width: 100%;
 }
 
 .freezer {
-	background: LightCyan;
-	/* padding: 10%; */
-	padding-left: 30%;
-	padding-right: 30%;
-	padding-top: 100px;
-	display: flex;
-	flex-direction: column;
-	gap: 0px;
-	height: 180vh;
+  /* i would suggest taking this light cyan background and just applying it to the body element, this way we only need to set it once, and it will always fill up the browser */
+  /* background: LightCyan; */
+
+  /* padding: 10%; */
+  padding-left: 30%;
+  padding-right: 30%;
+
+  /* here we can remove the top-padding thanks to the vertical centering from the body flexbox */
+  /* padding-top: 100px; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  /* this height is one of the reasons for the large amount of space. the downside is that it makes the shelves all relatively smaller -- so to fix that we can adjust the size of the shelves.  */
+  /* height: 900px; */
 }
 
 .top-shelf {
-	background: azure; 
-	height: 15%;
-	padding: 15px;
-	display: flex;
-	gap: 10px;
+  background: azure;
+
+  /* here i decided to try it with px height instead of %, we can definitely get % to work, but it might take a little more restructuring in the html -- can look at this together if you would like */
+  /* height: 15%; */
+  height: 120px;
+
+  padding: 15px;
+  display: flex;
+  gap: 10px;
 }
 
 .top-item {
-	background: WhiteSmoke;
-	padding: 5px;
-	width: 100%;
-	align-content: center;
+  background: WhiteSmoke;
+  padding: 5px;
+  width: 100%;
+  align-content: center;
 }
 
 .bottom-shelf {
-	background: azure;
-	width: 100%;
-	height: 10%;
-	padding: 15px;
-	display: flex;
-	gap: 10px;
+  background: azure;
+  width: 100%;
+
+  /* same thing as top shelf height */
+  /* height: 10%; */
+  height: 90px;
+
+  padding: 15px;
+  display: flex;
+  gap: 10px;
 }
 
 .bottom-item {
-	background: WhiteSmoke;
-	padding: 5px;
-	width: 100%;
-	align-content: center;
+  background: WhiteSmoke;
+  padding: 5px;
+  width: 100%;
+  align-content: center;
 }
 
 .fridge {
-	background: LightCyan;
-	padding-left: 30%;
-	padding-right: 30%;
-	padding-top: 100px;
-	display: flex;
-	flex-direction: column;
-	gap: 0px;
-	height: 180vh;
+  /* same suggestion here for the bg color */
+  /* background: LightCyan; */
+
+  padding-left: 30%;
+  padding-right: 30%;
+
+  /* the padding-top here on the frige component was a major culprit for the large space between the two parts of the fridge, removing it connects them nicely */
+  /* padding-top: 100px; */
+
+  /* if you wanted a little space, you could try a smaller number for top padding: */
+  padding-top: 5px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  /* same issue as with the freezer, this height was also contributing to the spacing issue */
+  /* height: 180vh; */
 }
 
 .small-top {
-	background: WhiteSmoke;
-	padding: 5px;
-	width: 50%;
-	align-content: center;
+  background: WhiteSmoke;
+  padding: 5px;
+  width: 50%;
+  align-content: center;
 }
 
 .middle-shelf {
-	background: azure;
-	width: 100%;
-	height: 20%;
-	padding: 15px;
-	display: flex;
-	gap: 10px;
+  background: azure;
+  width: 100%;
+
+  /* same thing as top and bottom shelf height */
+  /* height: 20%; */
+  height: 140px;
+
+  padding: 15px;
+  display: flex;
+  gap: 10px;
 }
 
 .middle-item {
-	background: WhiteSmoke;
-	padding: 5px;
-	width: 100%;
-	align-content: center;
+  background: WhiteSmoke;
+  padding: 5px;
+  width: 100%;
+  align-content: center;
 }

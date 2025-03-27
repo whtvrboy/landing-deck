@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%
+}
+
+@font-face {
+  font-family: Mojang;
+  src: url(mojang-regular.ttf);
+}
+
+body {
+	background-image: url("savanna.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #95923d;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+button  {
+	background-color: #c06b3d;
+	border: ridge #867d68;
+	color: #f3da20;
+	padding: 8px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Mojang;
+}
+
+.giraffe1, .giraffe4 {
+	width: 400px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+.giraffe2 {
+	width: 550px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+.giraffe3 {
+	width: 130px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+.giraffe5 {
+	width: 270px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+.giraffe6 {
+	width: 500px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+.giraffe7, .giraffe8, .giraffe10, .giraffe11 {
+	width: 200px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+.giraffe9 {
+	width: 220px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+.giraffe12 {
+	width: 320px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+}
+
+.hidden {
+	display:none;
+}
