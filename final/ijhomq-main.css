@@ -1,0 +1,45 @@
+@fontface {
+	font-family: Goudy Old Style;
+	src: url(goudos.ttf);
+}
+
+* {
+	font-family: Goudy Old Style;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%
+}
+
+
+.obj-light {
+  position: fixed;
+  top: 5px;
+  opacity: 0.15;
+  display: none;
+}
+
+.obj-road, .obj-daffodil {
+	width: 50%;
+	position: fixed;
+	top: 0px;
+	display: none;
+}
+
+.obj-moonflower {
+	width: 40%;
+	position: fixed;
+	opacity: 0.5;
+	top: 0px;
+	display: none;
+}
+
+.obj-differences {
+	position: fixed;
+	height: 100%;
+	top: 0px;
+	left: 20px;
+	opacity: 0.15;
+	display: none;
+}

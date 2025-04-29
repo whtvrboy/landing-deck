@@ -1,0 +1,21 @@
+@fontface {
+	font-family: Goudy Old Style;
+	src: url(goudos.ttf);
+}
+
+* {
+	font-family: Goudy Old Style;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%
+}
+
+li {
+	list-style-type: none;
+}
+
+/* div.first { */
+	/* text-indent: 100px; */
+/* } */
