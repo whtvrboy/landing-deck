@@ -42,3 +42,39 @@ $(".differences").hover(
     $(".obj-differences").hide();
   }
 );
+
+$(".boxes").hover(
+  function () {
+    $(".obj-boxes").show();
+  },
+  function () {
+    $(".obj-boxes").hide();
+  }
+);
+
+$(".brick").hover(
+  function () {
+    $(".obj-brick").show();
+  },
+  function () {
+    $(".obj-brick").hide();
+  }
+);
+
+$(".hill").hover(
+  function () {
+    $(".obj-hill").show();
+  },
+  function () {
+    $(".obj-hill").hide();
+  }
+);
+
+$(".toddler").hover(
+  function () {
+    $(".obj-toddler").show();
+  },
+  function () {
+    $(".obj-toddler").hide();
+  }
+);

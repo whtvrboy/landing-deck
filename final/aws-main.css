@@ -1,0 +1,45 @@
+@fontface {
+	font-family: Goudy Old Style;
+	src: url(goudos.ttf);
+}
+
+* {
+	font-family: Goudy Old Style;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%
+}
+
+.obj-boxes {
+  position: fixed;
+  top: 5px;
+  left: 0px;
+  opacity: 0.2;
+  display: none;
+}
+
+.obj-toddler {
+  position: fixed;
+  top: 5px;
+  height: 50%;
+  opacity: 0.3;
+  display: none;
+}
+
+.obj-brick {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0.04;
+  display: none;
+}
+
+.obj-hill {
+  position: fixed;
+  height: 90%;
+  top: 5px;
+  left: 700px;
+  display: none;
+}
